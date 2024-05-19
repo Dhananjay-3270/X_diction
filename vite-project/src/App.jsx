@@ -28,7 +28,7 @@ function App() {
 
   return (
     <>
-      <h1>Dictonary App</h1>
+      <h1>Dictionary App</h1>
       <input
         onChange={handlechange}
         type="text"
@@ -36,7 +36,8 @@ function App() {
         value={search}
       />
       <button onClick={handleclick}>Search</button>
-      <h4>Definition:<span>{filter && <p>{filter}</p>}</span></h4>
+      <h4>Definition:</h4>
+      {filter && <p>{filter}</p>}
     </>
   );
 }
